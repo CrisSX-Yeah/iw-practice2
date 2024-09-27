@@ -34,6 +34,12 @@
         <LinkParameter id="sv1#page10#enu6#ln27#par108" name="precio_field_precio producto" source="sv1#page10#enu6#fld23" target="sv1#miu12.mov1#opm9#icu9#icp31"/>
       </Link>
     </EntryUnit>
+    <SelectorUnit gr:x="345" gr:y="210" id="sv1#page10#seu2" name="CRUD Categorias" entity="ent2">
+      <Link id="sv1#page10#seu2#ln29" name="Flow29" to="sv1#page10#enu6" type="transport" validate="true">
+        <LinkParameter id="sv1#page10#seu2#ln29#par109" name="nombreCategoria_categoria_selection_field [label]" source="ent2#att3Array" target="sv1#page10#enu6#sfld5_label"/>
+        <LinkParameter id="sv1#page10#seu2#ln29#par110" name="oid_categoria_selection_field [output]" source="ent2#att2Array" target="sv1#page10#enu6#sfld5_output"/>
+      </Link>
+    </SelectorUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">
     <layout:Row>
@@ -91,6 +97,20 @@
           <layout:Link link="sv1#page10#enu6#ln27"/>
         </layout:Unit>
       </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
       <layout:Cell/>
       <layout:Cell/>
       <layout:Cell/>
