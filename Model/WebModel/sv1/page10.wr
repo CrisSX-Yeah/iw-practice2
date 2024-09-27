@@ -1,10 +1,7 @@
 <Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="795" gr:y="225" id="sv1#page10" name="Mantenimiento de Productos" landmark="true">
   <ContentUnits>
-    <PowerIndexUnit gr:x="0" gr:y="0" id="sv1#page10#pwu13" name="Productos" sortable="true" checkable="false" useCountQuery="false" entity="ent1" linkOrder="sv1#page10#pwu13#ln14 sv1#page10#pwu13#ln15 sv1#page10#pwu13#ln26" displayAttributes="ent1#att1 ent1#att4">
+    <PowerIndexUnit gr:x="0" gr:y="0" id="sv1#page10#pwu13" name="Productos" sortable="true" checkable="false" useCountQuery="false" entity="ent1" linkOrder="sv1#page10#pwu13#ln14 sv1#page10#pwu13#ln26 sv1#page10#pwu13#ln36" displayAttributes="ent1#att1 ent1#att4">
       <Link id="sv1#page10#pwu13#ln14" name="Consultar" to="sv1#page10#dau4" automaticCoupling="true" type="normal" validate="true"/>
-      <Link id="sv1#page10#pwu13#ln15" name="Borrar" to="sv1#miu7" type="normal" validate="true">
-        <LinkParameter id="sv1#page10#pwu13#ln15#par27" name="oid_id producto" source="data[].ent1#att1" target="sv1#miu7.mov1#opm6#icu6#icp7"/>
-      </Link>
       <Link id="sv1#page10#pwu13#ln26" name="Modificar" to="sv1#page10#enu6" type="normal" validate="true">
         <LinkParameter id="sv1#page10#pwu13#ln26#par99" name="productosTocategorias.oid_categoria_selection_field - Preselection" source="data[].rel1#role1_ent2#att2" target="sv1#page10#enu6#sfld5_presel"/>
         <LinkParameter id="sv1#page10#pwu13#ln26#par100" name="descripcionProducto_descripcion_field" source="data[].ent1#att5" target="sv1#page10#enu6#fld22_slot"/>
@@ -14,18 +11,21 @@
       </Link>
       <SortAttribute attribute="ent1#att1" order="ascending"/>
       <SortAttribute attribute="ent1#att4" order="ascending"/>
+      <Link id="sv1#page10#pwu13#ln36" name="Borrar" to="sv1#miu7" type="normal" validate="true">
+        <LinkParameter id="sv1#page10#pwu13#ln36#par111" name="oid_id producto" source="data[].ent1#att1" target="sv1#miu7.mov1#opm6#icu6#icp7"/>
+      </Link>
     </PowerIndexUnit>
-    <DataUnit gr:x="225" gr:y="5" id="sv1#page10#dau4" name="Consultar" entity="ent1" displayAttributes="ent1#att1 ent1#att4 ent1#att5 ent1#att6">
+    <DataUnit gr:x="225" gr:y="5" id="sv1#page10#dau4" name="Detalles del producto" entity="ent1" displayAttributes="ent1#att1 ent1#att4 ent1#att5 ent1#att6">
       <Selector id="sv1#page10#dau4#su8" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv1#page10#dau4#su8#kcond12" name="KeyCondition12" predicate="in" implied="false"/>
       </Selector>
     </DataUnit>
-    <EntryUnit gr:x="25" gr:y="200" id="sv1#page10#enu6" name="formulario producto" linkOrder="sv1#page10#enu6#ln27">
+    <EntryUnit gr:x="25" gr:y="200" id="sv1#page10#enu6" name="Crear o actualizar producto" linkOrder="sv1#page10#enu6#ln27">
       <Field id="sv1#page10#enu6#fld20" name="oid_field" type="string" modifiable="false" preloaded="true" hidden="true"/>
-      <Field id="sv1#page10#enu6#fld21" name="nombre_field" type="string" modifiable="true" preloaded="true"/>
-      <Field id="sv1#page10#enu6#fld22" name="descripcion_field" type="text" modifiable="true" preloaded="true"/>
-      <Field id="sv1#page10#enu6#fld23" name="precio_field" type="string" modifiable="true" preloaded="true"/>
-      <SelectionField id="sv1#page10#enu6#sfld5" name="categoria_selection_field" type="string"/>
+      <Field id="sv1#page10#enu6#fld21" name="Nombre" type="string" modifiable="true" preloaded="true"/>
+      <Field id="sv1#page10#enu6#fld22" name="Descripci&#243;n" type="text" modifiable="true" preloaded="true"/>
+      <Field id="sv1#page10#enu6#fld23" name="Precio" type="string" modifiable="true" preloaded="true"/>
+      <SelectionField id="sv1#page10#enu6#sfld5" name="Categor&#237;a" type="string"/>
       <Link id="sv1#page10#enu6#ln27" name="OK" to="sv1#miu12" type="normal" validate="true">
         <LinkParameter id="sv1#page10#enu6#ln27#par104" name="categoria_selection_field_categoria producto" source="sv1#page10#enu6#sfld5" target="sv1#miu12.mov1#opm9#icu9#icp32"/>
         <LinkParameter id="sv1#page10#enu6#ln27#par105" name="descripcion_field_descripcion producto" source="sv1#page10#enu6#fld22" target="sv1#miu12.mov1#opm9#icu9#icp30"/>
@@ -43,13 +43,13 @@
   </ContentUnits>
   <layout:Grid containerType="grid">
     <layout:Row>
-      <layout:Cell colspan="6">
+      <layout:Cell colspan="6" rowspan="2">
         <layout:Unit unitId="sv1#page10#pwu13">
           <layout:Attribute attribute="ent1#att1"/>
           <layout:Attribute attribute="ent1#att4"/>
           <layout:Link link="sv1#page10#pwu13#ln14"/>
-          <layout:Link link="sv1#page10#pwu13#ln15"/>
           <layout:Link link="sv1#page10#pwu13#ln26"/>
+          <layout:Link link="sv1#page10#pwu13#ln36"/>
           <layout:Link link="sv1#page10#pwu13ent1#att1"/>
           <layout:Link link="sv1#page10#pwu13ent1#att4"/>
         </layout:Unit>
@@ -75,6 +75,12 @@
       <layout:Cell/>
     </layout:Row>
     <layout:Row>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
       <layout:Cell colspan="6">
         <layout:Unit unitId="sv1#page10#dau4">
           <layout:Attribute attribute="ent1#att1"/>
@@ -83,12 +89,6 @@
           <layout:Attribute attribute="ent1#att6"/>
         </layout:Unit>
       </layout:Cell>
-      <layout:Cell/>
-      <layout:Cell/>
-      <layout:Cell/>
-      <layout:Cell/>
-      <layout:Cell/>
-      <layout:Cell colspan="6"/>
       <layout:Cell/>
       <layout:Cell/>
       <layout:Cell/>

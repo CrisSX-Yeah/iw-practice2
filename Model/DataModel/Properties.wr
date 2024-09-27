@@ -64,6 +64,5 @@
       <db:JoinColumn attribute="ent2#att2" name="categorias_oid"/>
     </RelationshipRole2>
   </Relationship>
-  <db:Database id="db2" name="true-iw-practice2" type="PostgreSQL 9" url="jdbc:postgresql://localhost:5432/true-iw-practice2" username="postgres" password="#Julasp421Dasgue" schema="public">
-  </db:Database>
+  <db:Database id="db2" name="true-iw-practice2" type="PostgreSQL 9" url="jdbc:postgresql://localhost:5432/true-iw-practice2" username="postgres" password="#Julasp421Dasgue" schema="public"/>
 </DataModel>
