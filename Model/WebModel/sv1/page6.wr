@@ -36,8 +36,8 @@
       <layout:Cell/>
       <layout:Cell colspan="5">
         <layout:Unit unitId="sv1#page6#enu2">
-          <layout:Field field="sv1#page6#enu2#fld2"/>
           <layout:Link link="sv1#page6#enu2#ln5"/>
+          <layout:Field field="sv1#page6#enu2#fld2"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>
