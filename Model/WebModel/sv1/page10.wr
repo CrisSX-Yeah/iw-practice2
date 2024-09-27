@@ -1,10 +1,10 @@
 <Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="795" gr:y="225" id="sv1#page10" name="Mantenimiento de Productos" landmark="true">
   <ContentUnits>
-    <PowerIndexUnit gr:x="0" gr:y="0" id="sv1#page10#pwu13" name="Productos" sortable="true" checkable="false" useCountQuery="false" entity="ent1" linkOrder="sv1#page10#pwu13#ln13 sv1#page10#pwu13#ln14" displayAttributes="ent1#att1 ent1#att4">
-      <Link id="sv1#page10#pwu13#ln13" name="Borrar" to="sv1#miu7" type="normal" validate="true">
-        <LinkParameter id="sv1#page10#pwu13#ln13#par26" name="id_id producto" source="data[].ent1#att1" target="sv1#miu7.mov1#opm6#icu6#icp7"/>
-      </Link>
+    <PowerIndexUnit gr:x="0" gr:y="0" id="sv1#page10#pwu13" name="Productos" sortable="true" checkable="false" useCountQuery="false" entity="ent1" linkOrder="sv1#page10#pwu13#ln14 sv1#page10#pwu13#ln15" displayAttributes="ent1#att1 ent1#att4">
       <Link id="sv1#page10#pwu13#ln14" name="Consultar" to="sv1#page10#dau4" automaticCoupling="true" type="normal" validate="true"/>
+      <Link id="sv1#page10#pwu13#ln15" name="Borrar" to="sv1#miu7" type="normal" validate="true">
+        <LinkParameter id="sv1#page10#pwu13#ln15#par27" name="oid_id producto" source="data[].ent1#att1" target="sv1#miu7.mov1#opm6#icu6#icp7"/>
+      </Link>
     </PowerIndexUnit>
     <DataUnit gr:x="225" gr:y="5" id="sv1#page10#dau4" name="Consultar" entity="ent1">
       <Selector id="sv1#page10#dau4#su8" defaultPolicy="fill" booleanOperator="and">
@@ -18,8 +18,8 @@
         <layout:Unit unitId="sv1#page10#pwu13">
           <layout:Attribute attribute="ent1#att1"/>
           <layout:Attribute attribute="ent1#att4"/>
-          <layout:Link link="sv1#page10#pwu13#ln13"/>
           <layout:Link link="sv1#page10#pwu13#ln14"/>
+          <layout:Link link="sv1#page10#pwu13#ln15"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>
