@@ -1,0 +1,45 @@
+<OperationModule xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="715" gr:y="285" id="mov1#opm9" name="Crear o Modificar Producto">
+  <OperationUnits>
+    <InputCollectorUnit id="mov1#opm9#icu9" gr:x="25" gr:y="180" linkOrder="mov1#opm9#icu9#ln24 mov1#opm9#icu9#ln25">
+      <OKLink id="mov1#opm9#icu9#oln27" name="OKFlow27" to="mov1#opm9#inn4">
+        <LinkParameter id="mov1#opm9#icu9#oln27#par98" name="oid producto_Input" source="mov1#opm9#icu9#icp28" target="mov1#opm9#inn4.isnotnull"/>
+      </OKLink>
+      <InputCollectorParameter id="mov1#opm9#icu9#icp28" name="oid producto"/>
+      <InputCollectorParameter id="mov1#opm9#icu9#icp29" name="nombre producto"/>
+      <InputCollectorParameter id="mov1#opm9#icu9#icp30" name="descripcion producto"/>
+      <InputCollectorParameter id="mov1#opm9#icu9#icp31" name="precio producto"/>
+      <InputCollectorParameter id="mov1#opm9#icu9#icp32" name="categoria producto"/>
+      <Link id="mov1#opm9#icu9#ln24" name="Flow24" to="mov1#opm9#mfu3" type="transport" validate="true" gr:bendpoints="164,-118,-171,22">
+        <LinkParameter id="mov1#opm9#icu9#ln24#par88" name="descripcion producto_descripcionProducto" source="mov1#opm9#icu9#icp30" target="mov1#opm9#mfu3.ent1#att5"/>
+        <LinkParameter id="mov1#opm9#icu9#ln24#par89" name="oid producto_KeyCondition15 [oid]" source="mov1#opm9#icu9#icp28" target="mov1#opm9#mfu3#su11#kcond15.ent1#att1"/>
+        <LinkParameter id="mov1#opm9#icu9#ln24#par90" name="nombre producto_nombreProducto" source="mov1#opm9#icu9#icp29" target="mov1#opm9#mfu3.ent1#att4"/>
+        <LinkParameter id="mov1#opm9#icu9#ln24#par91" name="precio producto_precioProducto" source="mov1#opm9#icu9#icp31" target="mov1#opm9#mfu3.ent1#att6"/>
+        <LinkParameter id="mov1#opm9#icu9#ln24#par96" name="categoria producto_categorias.oid(productosTocategorias)" source="mov1#opm9#icu9#icp32" target="mov1#opm9#mfu3.rel1#role1.ent2#att2"/>
+      </Link>
+      <Link id="mov1#opm9#icu9#ln25" name="Flow25" to="mov1#opm9#cru8" type="transport" validate="true" gr:bendpoints="201,103,-194,18">
+        <LinkParameter id="mov1#opm9#icu9#ln25#par92" name="descripcion producto_descripcionProducto" source="mov1#opm9#icu9#icp30" target="mov1#opm9#cru8.ent1#att5"/>
+        <LinkParameter id="mov1#opm9#icu9#ln25#par93" name="nombre producto_nombreProducto" source="mov1#opm9#icu9#icp29" target="mov1#opm9#cru8.ent1#att4"/>
+        <LinkParameter id="mov1#opm9#icu9#ln25#par94" name="oid producto_oid" source="mov1#opm9#icu9#icp28" target="mov1#opm9#cru8.ent1#att1"/>
+        <LinkParameter id="mov1#opm9#icu9#ln25#par95" name="precio producto_precioProducto" source="mov1#opm9#icu9#icp31" target="mov1#opm9#cru8.ent1#att6"/>
+        <LinkParameter id="mov1#opm9#icu9#ln25#par97" name="categoria producto_categorias.oid(productosTocategorias)" source="mov1#opm9#icu9#icp32" target="mov1#opm9#cru8.rel1#role1.ent2#att2"/>
+      </Link>
+    </InputCollectorUnit>
+    <CreateUnit gr:x="495" gr:y="305" id="mov1#opm9#cru8" name="crear producto" entity="ent1">
+      <OKLink id="mov1#opm9#cru8#oln30" name="OKFlow30" to="mov1#opm9#okcu9" automaticCoupling="true"/>
+      <KOLink id="mov1#opm9#cru8#kln17" name="KOFlow17" to="mov1#opm9#kocu9" automaticCoupling="true"/>
+    </CreateUnit>
+    <ModifyUnit gr:x="415" gr:y="75" id="mov1#opm9#mfu3" name="modificar producto" entity="ent1">
+      <Selector id="mov1#opm9#mfu3#su11" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="mov1#opm9#mfu3#su11#kcond15" name="KeyCondition15" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="mov1#opm9#mfu3#oln29" name="OKFlow29" to="mov1#opm9#okcu9" automaticCoupling="true"/>
+      <KOLink id="mov1#opm9#mfu3#kln16" name="KOFlow16" to="mov1#opm9#kocu9" automaticCoupling="true"/>
+    </ModifyUnit>
+    <IsNotNullUnit gr:x="345" gr:y="215" id="mov1#opm9#inn4" name="existe producto?" emptyStringAsNull="true">
+      <OKLink id="mov1#opm9#inn4#oln28" name="OKFlow28" to="mov1#opm9#mfu3" automaticCoupling="true"/>
+      <KOLink id="mov1#opm9#inn4#kln15" name="KOFlow15" to="mov1#opm9#cru8" automaticCoupling="true"/>
+    </IsNotNullUnit>
+    <OKCollectorUnit gr:x="670" gr:y="115" id="mov1#opm9#okcu9" name="OK Port9"/>
+    <KOCollectorUnit gr:x="670" gr:y="255" id="mov1#opm9#kocu9" name="KO Port9"/>
+  </OperationUnits>
+</OperationModule>

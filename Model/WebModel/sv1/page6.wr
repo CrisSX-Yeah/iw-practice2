@@ -8,6 +8,8 @@
         <LinkParameter id="sv1#page6#pwu9#ln4#par7" name="id_id_field" source="data[].ent2#att2" target="sv1#page6#enu2#fld3_slot"/>
         <LinkParameter id="sv1#page6#pwu9#ln4#par8" name="nombreCategoria_nombre_field" source="data[].ent2#att3" target="sv1#page6#enu2#fld2_slot"/>
       </Link>
+      <SortAttribute attribute="ent2#att2" order="ascending"/>
+      <SortAttribute attribute="ent2#att3" order="ascending"/>
     </PowerIndexUnit>
     <EntryUnit gr:x="5" gr:y="155" id="sv1#page6#enu2" name="formulario categoria" linkOrder="sv1#page6#enu2#ln5">
       <Field id="sv1#page6#enu2#fld2" name="nombre_field" type="string" modifiable="true" preloaded="true"/>
@@ -26,6 +28,8 @@
           <layout:Attribute attribute="ent2#att3"/>
           <layout:Link link="sv1#page6#pwu9#ln1"/>
           <layout:Link link="sv1#page6#pwu9#ln4"/>
+          <layout:Link link="sv1#page6#pwu9ent2#att2"/>
+          <layout:Link link="sv1#page6#pwu9ent2#att3"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>
