@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="190" gr:y="225" id="sv1#page6" name="Mantenimiento de Categor&#237;as" landmark="true">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="225" gr:y="250" id="sv1#page6" name="Mantenimiento de Categor&#237;as" landmark="true">
   <ContentUnits>
     <PowerIndexUnit id="sv1#page6#pwu9" name="Categor&#237;as" gr:x="0" gr:y="0" sortable="true" checkable="false" useCountQuery="false" entity="ent2" displayAttributes="ent2#att2 ent2#att3" linkOrder="sv1#page6#pwu9#ln4 sv1#page6#pwu9#ln6">
       <Link id="sv1#page6#pwu9#ln4" name="Modificar" to="sv1#page6#enu2" type="normal" validate="true">
