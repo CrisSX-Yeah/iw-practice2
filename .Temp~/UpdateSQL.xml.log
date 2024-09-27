@@ -1,42 +1,42 @@
-[26 sep 2024 23:49:38] DEBUG Executing SQL script
-[26 sep 2024 23:49:38] INFO ================================================================================
-[26 sep 2024 23:49:38] INFO onError= 'stop'
-[26 sep 2024 23:49:38] INFO autoCommit= 'false'
-[26 sep 2024 23:49:38] INFO username= 'postgres'
-[26 sep 2024 23:49:38] INFO outputPath= 'C:\WebRatio\WebRatio Platform 7.2.18.x64bit\workspace\true-iw-practice2\.Temp~\UpdateSQL.xml'
-[26 sep 2024 23:49:38] INFO outputLogPath= 'C:\WebRatio\WebRatio Platform 7.2.18.x64bit\workspace\true-iw-practice2\.Temp~\UpdateSQL.xml.log'
-[26 sep 2024 23:49:38] INFO encoding= ''
-[26 sep 2024 23:49:38] INFO driverClass= 'org.postgresql.Driver'
-[26 sep 2024 23:49:38] INFO sqlScript= 'C:\WebRatio\WebRatio Platform 7.2.18.x64bit\workspace\true-iw-practice2\.Temp~\UpdateSQL.sql'
-[26 sep 2024 23:49:38] INFO eventSocketPort= '52067'
-[26 sep 2024 23:49:38] INFO statementSeparator= ';'
-[26 sep 2024 23:49:38] INFO derby.system.home= 'C:\WebRatio\WebRatio Platform 7.2.18.x64bit\workspace\.metadata\.plugins\com.webratio.commons.db\derby'
-[26 sep 2024 23:49:38] INFO password= '#Julasp421Dasgue'
-[26 sep 2024 23:49:38] INFO url= 'jdbc:postgresql://localhost:5432/true-iw-practice2'
-[26 sep 2024 23:49:38] INFO ================================================================================
-[26 sep 2024 23:49:38] INFO Connecting to the Database...
-[26 sep 2024 23:49:38] INFO Database connection estabilished
-[26 sep 2024 23:49:38] INFO transaction isolation: 2
-[26 sep 2024 23:49:38] DEBUG ================================================================================
-[26 sep 2024 23:49:38] DEBUG Executing SQL script file: C:\WebRatio\WebRatio Platform 7.2.18.x64bit\workspace\true-iw-practice2\.Temp~\UpdateSQL.sql
-[26 sep 2024 23:49:38] DEBUG Executing statement:  create table "public"."group" ( "oid"  int4  not null, "groupname"  varchar(255), primary key ("oid") )
-[26 sep 2024 23:49:38] DEBUG Executing statement:    create table "public"."module" ( "oid"  int4  not null, "moduleid"  varchar(255), "modulename"  varchar(255), primary key ("oid") )
-[26 sep 2024 23:49:38] DEBUG Executing statement:    create table "public"."user" ( "oid"  int4  not null, "username"  varchar(255), "password"  varchar(255), "email"  varchar(255), primary key ("oid") )
-[26 sep 2024 23:49:38] DEBUG Executing statement:    create table "public"."productos" ( "id"  int4  not null, "nombreproducto"  varchar(255), "descripcionproducto"  text, "precioproducto"  numeric(19, 2), primary key ("id") )
-[26 sep 2024 23:49:38] DEBUG Executing statement:    create table "public"."categorias" ( "id"  int4  not null, "nombrecategoria"  varchar(255), primary key ("id") )
-[26 sep 2024 23:49:38] DEBUG Executing statement:    alter table "public"."group"  add column  "module_oid"  int4
-[26 sep 2024 23:49:38] DEBUG Executing statement:  alter table "public"."group"   add constraint fk_group_module foreign key ("module_oid") references "public"."module" ("oid")
-[26 sep 2024 23:49:38] DEBUG Executing statement:    create table "public"."group_module" ( "group_oid"  int4 not null, "module_oid"  int4 not null, primary key ("group_oid", "module_oid") )
-[26 sep 2024 23:49:38] DEBUG Executing statement:  alter table "public"."group_module"   add constraint fk_group_module_group foreign key ("group_oid") references "public"."group" ("oid")
-[26 sep 2024 23:49:38] DEBUG Executing statement:  alter table "public"."group_module"   add constraint fk_group_module_module foreign key ("module_oid") references "public"."module" ("oid")
-[26 sep 2024 23:49:38] DEBUG Executing statement:    alter table "public"."user"  add column  "group_oid"  int4
-[26 sep 2024 23:49:38] DEBUG Executing statement:  alter table "public"."user"   add constraint fk_user_group foreign key ("group_oid") references "public"."group" ("oid")
-[26 sep 2024 23:49:38] DEBUG Executing statement:    create table "public"."user_group" ( "user_oid"  int4 not null, "group_oid"  int4 not null, primary key ("user_oid", "group_oid") )
-[26 sep 2024 23:49:38] DEBUG Executing statement:  alter table "public"."user_group"   add constraint fk_user_group_user foreign key ("user_oid") references "public"."user" ("oid")
-[26 sep 2024 23:49:38] DEBUG Executing statement:  alter table "public"."user_group"   add constraint fk_user_group_group foreign key ("group_oid") references "public"."group" ("oid")
-[26 sep 2024 23:49:38] DEBUG Executing statement:    alter table "public"."productos"  add column  "categorias_oid"  int4
-[26 sep 2024 23:49:38] DEBUG Executing statement:  alter table "public"."productos"   add constraint fk_productos_categorias foreign key ("categorias_oid") references "public"."categorias" ("id")
-[26 sep 2024 23:49:38] DEBUG ================================================================================
-[26 sep 2024 23:49:38] DEBUG SQL SCRIPT SUCCESSFULLY EXECUTED
-[26 sep 2024 23:49:38] INFO Database connection closed
-[26 sep 2024 23:49:38] DEBUG Total time: 159 milliseconds
+[27 sep 2024 18:46:51] DEBUG Executing SQL script
+[27 sep 2024 18:46:51] INFO ================================================================================
+[27 sep 2024 18:46:51] INFO onError= 'stop'
+[27 sep 2024 18:46:51] INFO autoCommit= 'false'
+[27 sep 2024 18:46:51] INFO username= 'postgres'
+[27 sep 2024 18:46:51] INFO outputPath= 'C:\WebRatio\WebRatio Platform 7.2.18.x64bit\workspace\six-true-iw-practice2\.Temp~\UpdateSQL.xml'
+[27 sep 2024 18:46:51] INFO outputLogPath= 'C:\WebRatio\WebRatio Platform 7.2.18.x64bit\workspace\six-true-iw-practice2\.Temp~\UpdateSQL.xml.log'
+[27 sep 2024 18:46:51] INFO encoding= ''
+[27 sep 2024 18:46:51] INFO driverClass= 'org.postgresql.Driver'
+[27 sep 2024 18:46:51] INFO sqlScript= 'C:\WebRatio\WebRatio Platform 7.2.18.x64bit\workspace\six-true-iw-practice2\.Temp~\UpdateSQL.sql'
+[27 sep 2024 18:46:51] INFO eventSocketPort= '59015'
+[27 sep 2024 18:46:51] INFO statementSeparator= ';'
+[27 sep 2024 18:46:51] INFO derby.system.home= 'C:\WebRatio\WebRatio Platform 7.2.18.x64bit\workspace\.metadata\.plugins\com.webratio.commons.db\derby'
+[27 sep 2024 18:46:51] INFO password= '#Julasp421Dasgue'
+[27 sep 2024 18:46:51] INFO url= 'jdbc:postgresql://localhost:5432/true-iw-practice2'
+[27 sep 2024 18:46:51] INFO ================================================================================
+[27 sep 2024 18:46:51] INFO Connecting to the Database...
+[27 sep 2024 18:46:51] INFO Database connection estabilished
+[27 sep 2024 18:46:51] INFO transaction isolation: 2
+[27 sep 2024 18:46:51] DEBUG ================================================================================
+[27 sep 2024 18:46:51] DEBUG Executing SQL script file: C:\WebRatio\WebRatio Platform 7.2.18.x64bit\workspace\six-true-iw-practice2\.Temp~\UpdateSQL.sql
+[27 sep 2024 18:46:51] DEBUG Executing statement:  create table "public"."group" ( "oid"  int4  not null, "groupname"  varchar(255), primary key ("oid") )
+[27 sep 2024 18:46:51] DEBUG Executing statement:    create table "public"."module" ( "oid"  int4  not null, "moduleid"  varchar(255), "modulename"  varchar(255), primary key ("oid") )
+[27 sep 2024 18:46:51] DEBUG Executing statement:    create table "public"."user" ( "oid"  int4  not null, "username"  varchar(255), "password"  varchar(255), "email"  varchar(255), primary key ("oid") )
+[27 sep 2024 18:46:51] DEBUG Executing statement:    create table "public"."productos" ( "oid"  int4  not null, "nombreproducto"  varchar(255), "descripcionproducto"  text, "precioproducto"  numeric(19, 2), primary key ("oid") )
+[27 sep 2024 18:46:51] DEBUG Executing statement:    create table "public"."categorias" ( "oid"  int4  not null, "nombrecategoria"  varchar(255), primary key ("oid") )
+[27 sep 2024 18:46:51] DEBUG Executing statement:    alter table "public"."group"  add column  "module_oid"  int4
+[27 sep 2024 18:46:51] DEBUG Executing statement:  alter table "public"."group"   add constraint fk_group_module foreign key ("module_oid") references "public"."module" ("oid")
+[27 sep 2024 18:46:51] DEBUG Executing statement:    create table "public"."group_module" ( "group_oid"  int4 not null, "module_oid"  int4 not null, primary key ("group_oid", "module_oid") )
+[27 sep 2024 18:46:51] DEBUG Executing statement:  alter table "public"."group_module"   add constraint fk_group_module_group foreign key ("group_oid") references "public"."group" ("oid")
+[27 sep 2024 18:46:51] DEBUG Executing statement:  alter table "public"."group_module"   add constraint fk_group_module_module foreign key ("module_oid") references "public"."module" ("oid")
+[27 sep 2024 18:46:51] DEBUG Executing statement:    alter table "public"."user"  add column  "group_oid"  int4
+[27 sep 2024 18:46:51] DEBUG Executing statement:  alter table "public"."user"   add constraint fk_user_group foreign key ("group_oid") references "public"."group" ("oid")
+[27 sep 2024 18:46:51] DEBUG Executing statement:    create table "public"."user_group" ( "user_oid"  int4 not null, "group_oid"  int4 not null, primary key ("user_oid", "group_oid") )
+[27 sep 2024 18:46:51] DEBUG Executing statement:  alter table "public"."user_group"   add constraint fk_user_group_user foreign key ("user_oid") references "public"."user" ("oid")
+[27 sep 2024 18:46:51] DEBUG Executing statement:  alter table "public"."user_group"   add constraint fk_user_group_group foreign key ("group_oid") references "public"."group" ("oid")
+[27 sep 2024 18:46:51] DEBUG Executing statement:    alter table "public"."productos"  add column  "categorias_oid"  int4
+[27 sep 2024 18:46:51] DEBUG Executing statement:  alter table "public"."productos"   add constraint fk_productos_categorias foreign key ("categorias_oid") references "public"."categorias" ("oid")
+[27 sep 2024 18:46:51] DEBUG ================================================================================
+[27 sep 2024 18:46:51] DEBUG SQL SCRIPT SUCCESSFULLY EXECUTED
+[27 sep 2024 18:46:51] INFO Database connection closed
+[27 sep 2024 18:46:51] DEBUG Total time: 317 milliseconds

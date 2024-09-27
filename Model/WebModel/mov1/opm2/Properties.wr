@@ -1,0 +1,36 @@
+<OperationModule xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="260" gr:y="270" id="mov1#opm2" name="Crear o Modificar Categoria">
+  <OperationUnits>
+    <InputCollectorUnit id="mov1#opm2#icu2" gr:x="-40" gr:y="170" linkOrder="mov1#opm2#icu2#ln2 mov1#opm2#icu2#ln3">
+      <OKLink id="mov1#opm2#icu2#oln7" name="OKFlow7" to="mov1#opm2#inn1">
+        <LinkParameter id="mov1#opm2#icu2#oln7#par11" name="id categoria_Input" source="mov1#opm2#icu2#icp2" target="mov1#opm2#inn1.isnotnull"/>
+      </OKLink>
+      <InputCollectorParameter id="mov1#opm2#icu2#icp2" name="id categoria"/>
+      <InputCollectorParameter id="mov1#opm2#icu2#icp3" name="nombre categoria"/>
+      <Link id="mov1#opm2#icu2#ln2" name="Flow2" to="mov1#opm2#mfu1" type="transport" validate="true" gr:bendpoints="186,-136,-249,-16">
+        <LinkParameter id="mov1#opm2#icu2#ln2#par3" name="id categoria_KeyCondition7 [id]" source="mov1#opm2#icu2#icp2" target="mov1#opm2#mfu1#su3#kcond7.ent2#att2"/>
+        <LinkParameter id="mov1#opm2#icu2#ln2#par4" name="nombre categoria_nombreCategoria" source="mov1#opm2#icu2#icp3" target="mov1#opm2#mfu1.ent2#att3"/>
+      </Link>
+      <Link id="mov1#opm2#icu2#ln3" name="Flow3" to="mov1#opm2#cru3" type="transport" validate="true" gr:bendpoints="218,86,-222,21">
+        <LinkParameter id="mov1#opm2#icu2#ln3#par5" name="id categoria_id" source="mov1#opm2#icu2#icp2" target="mov1#opm2#cru3.ent2#att2"/>
+        <LinkParameter id="mov1#opm2#icu2#ln3#par6" name="nombre categoria_nombreCategoria" source="mov1#opm2#icu2#icp3" target="mov1#opm2#cru3.ent2#att3"/>
+      </Link>
+    </InputCollectorUnit>
+    <CreateUnit gr:x="460" gr:y="235" id="mov1#opm2#cru3" name="crear categoria" entity="ent2">
+      <OKLink id="mov1#opm2#cru3#oln10" name="OKFlow10" to="mov1#opm2#okcu2" automaticCoupling="true"/>
+      <KOLink id="mov1#opm2#cru3#kln4" name="KOFlow4" to="mov1#opm2#kocu2" automaticCoupling="true"/>
+    </CreateUnit>
+    <ModifyUnit gr:x="440" gr:y="45" id="mov1#opm2#mfu1" name="modificar categoria" entity="ent2">
+      <Selector id="mov1#opm2#mfu1#su3" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="mov1#opm2#mfu1#su3#kcond7" name="KeyCondition7" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="mov1#opm2#mfu1#oln9" name="OKFlow9" to="mov1#opm2#okcu2" automaticCoupling="true"/>
+      <KOLink id="mov1#opm2#mfu1#kln3" name="KOFlow3" to="mov1#opm2#kocu2" automaticCoupling="true"/>
+    </ModifyUnit>
+    <IsNotNullUnit gr:x="275" gr:y="175" id="mov1#opm2#inn1" name="existe categoria?" emptyStringAsNull="true">
+      <OKLink id="mov1#opm2#inn1#oln8" name="OKFlow8" to="mov1#opm2#mfu1" automaticCoupling="true"/>
+      <KOLink id="mov1#opm2#inn1#kln2" name="KOFlow2" to="mov1#opm2#cru3" automaticCoupling="true"/>
+    </IsNotNullUnit>
+    <OKCollectorUnit gr:x="650" gr:y="65" id="mov1#opm2#okcu2" name="OK Port2"/>
+    <KOCollectorUnit gr:x="650" gr:y="240" id="mov1#opm2#kocu2" name="KO Port2"/>
+  </OperationUnits>
+</OperationModule>

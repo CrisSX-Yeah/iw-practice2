@@ -1,105 +1,72 @@
-[26 sep 2024 23:54:40] Building database metadata model
-[26 sep 2024 23:54:40] Properties: {partialRefresh=false, processColumnsUsingSelect=, includePrimaryKeys=true, eventSocketClient=com.webratio.commons.net.EventSocketClient@6403b70c, includeTables=true, username=postgres, outputLogPath=C:\WebRatio\WebRatio Platform 7.2.18.x64bit\workspace\true-iw-practice2\.Temp~\DB.xml.log, readIndexes=null, driverClass=org.postgresql.Driver, includeSynonyms=true, metaDataProviderClass=com.webratio.commons.db.metadata.PostgreSQLMetaDataProvider, outputPath=C:\WebRatio\WebRatio Platform 7.2.18.x64bit\workspace\true-iw-practice2\.Temp~\DB.xml, schemaRegex=null, readProcedures=null, includeViews=true, derby.system.home=C:\WebRatio\WebRatio Platform 7.2.18.x64bit\workspace\.metadata\.plugins\com.webratio.commons.db\derby, url=jdbc:postgresql://localhost:5432/trick-iw-practica2, tableRegex=null, readSQLDefinitions=true, includeForeignKeys=true, retrieveAllNames=false, tablesToRefresh=, eventSocketPort=52420}
-[26 sep 2024 23:54:40] URL: jdbc:postgresql://localhost:5432/trick-iw-practica2
-[26 sep 2024 23:54:40] Product name: PostgreSQL
-[26 sep 2024 23:54:40] Product version: 9.6.15
-[26 sep 2024 23:54:40] Driver name: PostgreSQL Native Driver
-[26 sep 2024 23:54:40] Driver version: PostgreSQL 9.3 JDBC3g (build 1103)
-[26 sep 2024 23:54:40] Driver major version: 9
-[26 sep 2024 23:54:40] Driver minor version: 3
-[26 sep 2024 23:54:40] Identifier quote string: 3
-[26 sep 2024 23:54:40] Retrieving schemas
-[26 sep 2024 23:54:40]   Found schema: information_schema
-[26 sep 2024 23:54:40]   Found schema: pg_catalog
-[26 sep 2024 23:54:40]   Found schema: public
-[26 sep 2024 23:54:40] Retrieving sequences
-[26 sep 2024 23:54:40] Retrieving [TABLE, VIEW, SYNONYM] for schema 'information_schema'
-[26 sep 2024 23:54:40] Retrieving [TABLE, VIEW, SYNONYM] for schema 'pg_catalog'
-[26 sep 2024 23:54:40] Retrieving [TABLE, VIEW, SYNONYM] for schema 'public'
-[26 sep 2024 23:54:40]   Found 'public.categorias' [type = TABLE]
-[26 sep 2024 23:54:40]   Found 'public.coche' [type = TABLE]
-[26 sep 2024 23:54:40]   Found 'public.fabricante' [type = TABLE]
-[26 sep 2024 23:54:40]   Found 'public.group' [type = TABLE]
-[26 sep 2024 23:54:40]   Found 'public.group_module' [type = TABLE]
-[26 sep 2024 23:54:40]   Found 'public.module' [type = TABLE]
-[26 sep 2024 23:54:40]   Found 'public.productos' [type = TABLE]
-[26 sep 2024 23:54:40]   Found 'public.user' [type = TABLE]
-[26 sep 2024 23:54:40]   Found 'public.user_group' [type = TABLE]
-[26 sep 2024 23:54:40] Retrieving columns for 'public.categorias' [type = TABLE]
-[26 sep 2024 23:54:40]   Found column: oid [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[26 sep 2024 23:54:40]   Found column: nombrecategoria [type = varchar][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
-[26 sep 2024 23:54:40] Retrieving primary keys for 'public.categorias' [type = TABLE]
-[26 sep 2024 23:54:40]   Found primary key column: oid
-[26 sep 2024 23:54:40] Retrieving columns for 'public.coche' [type = TABLE]
-[26 sep 2024 23:54:40]   Found column: oid [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[26 sep 2024 23:54:40]   Found column: modelo [type = varchar][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
-[26 sep 2024 23:54:40]   Found column: fabricante_oid [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[26 sep 2024 23:54:40] Retrieving primary keys for 'public.coche' [type = TABLE]
-[26 sep 2024 23:54:40]   Found primary key column: oid
-[26 sep 2024 23:54:40] Retrieving columns for 'public.fabricante' [type = TABLE]
-[26 sep 2024 23:54:40]   Found column: oid [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[26 sep 2024 23:54:40]   Found column: nombre [type = varchar][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
-[26 sep 2024 23:54:40]   Found column: origen [type = varchar][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
-[26 sep 2024 23:54:40]   Found column: anyo_fundacion [type = varchar][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
-[26 sep 2024 23:54:40]   Found column: descripcion [type = varchar][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
-[26 sep 2024 23:54:40]   Found column: enlace [type = varchar][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
-[26 sep 2024 23:54:40] Retrieving primary keys for 'public.fabricante' [type = TABLE]
-[26 sep 2024 23:54:40]   Found primary key column: oid
-[26 sep 2024 23:54:40] Retrieving columns for 'public.group' [type = TABLE]
-[26 sep 2024 23:54:40]   Found column: oid [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[26 sep 2024 23:54:40]   Found column: groupname [type = varchar][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
-[26 sep 2024 23:54:40]   Found column: module_oid [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[26 sep 2024 23:54:40] Retrieving primary keys for 'public.group' [type = TABLE]
-[26 sep 2024 23:54:40]   Found primary key column: oid
-[26 sep 2024 23:54:40] Retrieving columns for 'public.group_module' [type = TABLE]
-[26 sep 2024 23:54:40]   Found column: group_oid [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[26 sep 2024 23:54:40]   Found column: module_oid [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[26 sep 2024 23:54:40] Retrieving primary keys for 'public.group_module' [type = TABLE]
-[26 sep 2024 23:54:40]   Found primary key column: group_oid
-[26 sep 2024 23:54:40]   Found primary key column: module_oid
-[26 sep 2024 23:54:40] Retrieving columns for 'public.module' [type = TABLE]
-[26 sep 2024 23:54:40]   Found column: oid [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[26 sep 2024 23:54:40]   Found column: moduleid [type = varchar][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
-[26 sep 2024 23:54:40]   Found column: modulename [type = varchar][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
-[26 sep 2024 23:54:40] Retrieving primary keys for 'public.module' [type = TABLE]
-[26 sep 2024 23:54:40]   Found primary key column: oid
-[26 sep 2024 23:54:40] Retrieving columns for 'public.productos' [type = TABLE]
-[26 sep 2024 23:54:40]   Found column: oid [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[26 sep 2024 23:54:40]   Found column: nombreproducto [type = varchar][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
-[26 sep 2024 23:54:40]   Found column: descripcionproducto [type = text][SQL/XOPEN type = 12][size = 2147483647][dec. digits = 0]
-[26 sep 2024 23:54:40]   Found column: precioproducto [type = numeric][SQL/XOPEN type = 2][size = 19][dec. digits = 2]
-[26 sep 2024 23:54:40]   Found column: categorias_oid [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[26 sep 2024 23:54:40] Retrieving primary keys for 'public.productos' [type = TABLE]
-[26 sep 2024 23:54:40]   Found primary key column: oid
-[26 sep 2024 23:54:40] Retrieving columns for 'public.user' [type = TABLE]
-[26 sep 2024 23:54:40]   Found column: oid [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[26 sep 2024 23:54:40]   Found column: username [type = varchar][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
-[26 sep 2024 23:54:40]   Found column: password [type = varchar][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
-[26 sep 2024 23:54:40]   Found column: email [type = varchar][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
-[26 sep 2024 23:54:40]   Found column: group_oid [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[26 sep 2024 23:54:40] Retrieving primary keys for 'public.user' [type = TABLE]
-[26 sep 2024 23:54:40]   Found primary key column: oid
-[26 sep 2024 23:54:40] Retrieving columns for 'public.user_group' [type = TABLE]
-[26 sep 2024 23:54:40]   Found column: user_oid [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[26 sep 2024 23:54:40]   Found column: group_oid [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[26 sep 2024 23:54:40] Retrieving primary keys for 'public.user_group' [type = TABLE]
-[26 sep 2024 23:54:40]   Found primary key column: user_oid
-[26 sep 2024 23:54:40]   Found primary key column: group_oid
-[26 sep 2024 23:54:40] Retrieving foreign keys for 'public.categorias' [type = TABLE]
-[26 sep 2024 23:54:40] Retrieving foreign keys for 'public.coche' [type = TABLE]
-[26 sep 2024 23:54:40] Retrieving foreign keys for 'public.fabricante' [type = TABLE]
-[26 sep 2024 23:54:40] Retrieving foreign keys for 'public.group' [type = TABLE]
-[26 sep 2024 23:54:40]   Found foreign key: column module_oid references module(oid)
-[26 sep 2024 23:54:40] Retrieving foreign keys for 'public.group_module' [type = TABLE]
-[26 sep 2024 23:54:40]   Found foreign key: column group_oid references group(oid)
-[26 sep 2024 23:54:40]   Found foreign key: column module_oid references module(oid)
-[26 sep 2024 23:54:40] Retrieving foreign keys for 'public.module' [type = TABLE]
-[26 sep 2024 23:54:40] Retrieving foreign keys for 'public.productos' [type = TABLE]
-[26 sep 2024 23:54:40]   Found foreign key: column categorias_oid references categorias(oid)
-[26 sep 2024 23:54:40] Retrieving foreign keys for 'public.user' [type = TABLE]
-[26 sep 2024 23:54:40]   Found foreign key: column group_oid references group(oid)
-[26 sep 2024 23:54:40] Retrieving foreign keys for 'public.user_group' [type = TABLE]
-[26 sep 2024 23:54:40]   Found foreign key: column group_oid references group(oid)
-[26 sep 2024 23:54:40]   Found foreign key: column user_oid references user(oid)
-[26 sep 2024 23:54:40] Database metadata retrieved (134 ms)
-[26 sep 2024 23:54:40] Database connection closed
+[27 sep 2024 18:46:52] Building database metadata model
+[27 sep 2024 18:46:52] Properties: {partialRefresh=false, processColumnsUsingSelect=, includePrimaryKeys=true, eventSocketClient=com.webratio.commons.net.EventSocketClient@6403b70c, includeTables=true, username=postgres, outputLogPath=C:\WebRatio\WebRatio Platform 7.2.18.x64bit\workspace\six-true-iw-practice2\.Temp~\DB.xml.log, readIndexes=null, driverClass=org.postgresql.Driver, includeSynonyms=true, metaDataProviderClass=com.webratio.commons.db.metadata.PostgreSQLMetaDataProvider, outputPath=C:\WebRatio\WebRatio Platform 7.2.18.x64bit\workspace\six-true-iw-practice2\.Temp~\DB.xml, schemaRegex=null, readProcedures=null, includeViews=true, derby.system.home=C:\WebRatio\WebRatio Platform 7.2.18.x64bit\workspace\.metadata\.plugins\com.webratio.commons.db\derby, url=jdbc:postgresql://localhost:5432/true-iw-practice2, tableRegex=null, readSQLDefinitions=true, includeForeignKeys=false, retrieveAllNames=false, tablesToRefresh=, eventSocketPort=59018}
+[27 sep 2024 18:46:52] URL: jdbc:postgresql://localhost:5432/true-iw-practice2
+[27 sep 2024 18:46:52] Product name: PostgreSQL
+[27 sep 2024 18:46:52] Product version: 9.6.15
+[27 sep 2024 18:46:52] Driver name: PostgreSQL Native Driver
+[27 sep 2024 18:46:52] Driver version: PostgreSQL 9.3 JDBC3g (build 1103)
+[27 sep 2024 18:46:52] Driver major version: 9
+[27 sep 2024 18:46:52] Driver minor version: 3
+[27 sep 2024 18:46:52] Identifier quote string: 3
+[27 sep 2024 18:46:52] Retrieving schemas
+[27 sep 2024 18:46:52]   Found schema: information_schema
+[27 sep 2024 18:46:52]   Found schema: pg_catalog
+[27 sep 2024 18:46:52]   Found schema: public
+[27 sep 2024 18:46:52] Retrieving sequences
+[27 sep 2024 18:46:52] Retrieving [TABLE, VIEW, SYNONYM] for schema 'information_schema'
+[27 sep 2024 18:46:52] Retrieving [TABLE, VIEW, SYNONYM] for schema 'pg_catalog'
+[27 sep 2024 18:46:52] Retrieving [TABLE, VIEW, SYNONYM] for schema 'public'
+[27 sep 2024 18:46:52]   Found 'public.categorias' [type = TABLE]
+[27 sep 2024 18:46:52]   Found 'public.group' [type = TABLE]
+[27 sep 2024 18:46:52]   Found 'public.group_module' [type = TABLE]
+[27 sep 2024 18:46:52]   Found 'public.module' [type = TABLE]
+[27 sep 2024 18:46:52]   Found 'public.productos' [type = TABLE]
+[27 sep 2024 18:46:52]   Found 'public.user' [type = TABLE]
+[27 sep 2024 18:46:52]   Found 'public.user_group' [type = TABLE]
+[27 sep 2024 18:46:52] Retrieving columns for 'public.categorias' [type = TABLE]
+[27 sep 2024 18:46:52]   Found column: oid [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[27 sep 2024 18:46:52]   Found column: nombrecategoria [type = varchar][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
+[27 sep 2024 18:46:52] Retrieving primary keys for 'public.categorias' [type = TABLE]
+[27 sep 2024 18:46:52]   Found primary key column: oid
+[27 sep 2024 18:46:52] Retrieving columns for 'public.group' [type = TABLE]
+[27 sep 2024 18:46:52]   Found column: oid [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[27 sep 2024 18:46:52]   Found column: groupname [type = varchar][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
+[27 sep 2024 18:46:52]   Found column: module_oid [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[27 sep 2024 18:46:52] Retrieving primary keys for 'public.group' [type = TABLE]
+[27 sep 2024 18:46:52]   Found primary key column: oid
+[27 sep 2024 18:46:52] Retrieving columns for 'public.group_module' [type = TABLE]
+[27 sep 2024 18:46:52]   Found column: group_oid [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[27 sep 2024 18:46:52]   Found column: module_oid [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[27 sep 2024 18:46:52] Retrieving primary keys for 'public.group_module' [type = TABLE]
+[27 sep 2024 18:46:52]   Found primary key column: group_oid
+[27 sep 2024 18:46:52]   Found primary key column: module_oid
+[27 sep 2024 18:46:52] Retrieving columns for 'public.module' [type = TABLE]
+[27 sep 2024 18:46:52]   Found column: oid [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[27 sep 2024 18:46:52]   Found column: moduleid [type = varchar][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
+[27 sep 2024 18:46:52]   Found column: modulename [type = varchar][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
+[27 sep 2024 18:46:52] Retrieving primary keys for 'public.module' [type = TABLE]
+[27 sep 2024 18:46:52]   Found primary key column: oid
+[27 sep 2024 18:46:52] Retrieving columns for 'public.productos' [type = TABLE]
+[27 sep 2024 18:46:52]   Found column: oid [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[27 sep 2024 18:46:52]   Found column: nombreproducto [type = varchar][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
+[27 sep 2024 18:46:52]   Found column: descripcionproducto [type = text][SQL/XOPEN type = 12][size = 2147483647][dec. digits = 0]
+[27 sep 2024 18:46:52]   Found column: precioproducto [type = numeric][SQL/XOPEN type = 2][size = 19][dec. digits = 2]
+[27 sep 2024 18:46:52]   Found column: categorias_oid [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[27 sep 2024 18:46:52] Retrieving primary keys for 'public.productos' [type = TABLE]
+[27 sep 2024 18:46:52]   Found primary key column: oid
+[27 sep 2024 18:46:52] Retrieving columns for 'public.user' [type = TABLE]
+[27 sep 2024 18:46:52]   Found column: oid [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[27 sep 2024 18:46:52]   Found column: username [type = varchar][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
+[27 sep 2024 18:46:52]   Found column: password [type = varchar][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
+[27 sep 2024 18:46:52]   Found column: email [type = varchar][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
+[27 sep 2024 18:46:52]   Found column: group_oid [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[27 sep 2024 18:46:52] Retrieving primary keys for 'public.user' [type = TABLE]
+[27 sep 2024 18:46:52]   Found primary key column: oid
+[27 sep 2024 18:46:52] Retrieving columns for 'public.user_group' [type = TABLE]
+[27 sep 2024 18:46:52]   Found column: user_oid [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[27 sep 2024 18:46:52]   Found column: group_oid [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[27 sep 2024 18:46:52] Retrieving primary keys for 'public.user_group' [type = TABLE]
+[27 sep 2024 18:46:52]   Found primary key column: user_oid
+[27 sep 2024 18:46:52]   Found primary key column: group_oid
+[27 sep 2024 18:46:52] Database metadata retrieved (108 ms)
+[27 sep 2024 18:46:52] Database connection closed

@@ -1,17 +1,19 @@
-<OperationModule xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="190" gr:y="105" id="mov1#opm1" name="Borrar Categor&#237;a">
+<OperationModule xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="135" gr:y="155" id="mov1#opm1" name="Borrar Categoria">
   <OperationUnits>
     <InputCollectorUnit id="mov1#opm1#icu1" gr:x="30" gr:y="60">
-      <OKLink id="mov1#opm1#icu1#oln5" name="OKFlow5" to="mov1#opm1#dlu3" automaticCoupling="true"/>
-      <InputCollectorParameter id="mov1#opm1#icu1#icp1" name="Input Port Parameter1"/>
+      <OKLink id="mov1#opm1#icu1#oln6" name="OKFlow6" to="mov1#opm1#dlu3">
+        <LinkParameter id="mov1#opm1#icu1#oln6#par1" name="id categoria_KeyCondition6 [id]" source="mov1#opm1#icu1#icp1" target="mov1#opm1#dlu3#su2#kcond6.ent2#att2"/>
+      </OKLink>
+      <InputCollectorParameter id="mov1#opm1#icu1#icp1" name="id categoria"/>
     </InputCollectorUnit>
-    <DeleteUnit gr:x="280" gr:y="145" id="mov1#opm1#dlu3" name="borrar categor&#237;a" entity="ent2">
+    <DeleteUnit gr:x="330" gr:y="140" id="mov1#opm1#dlu3" name="Borrar Categoria" entity="ent2">
       <Selector id="mov1#opm1#dlu3#su2" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="mov1#opm1#dlu3#su2#kcond6" name="KeyCondition6" predicate="in" implied="false"/>
       </Selector>
-      <OKLink id="mov1#opm1#dlu3#oln6" name="OKFlow6" to="mov1#opm1#okcu1" automaticCoupling="true"/>
+      <OKLink id="mov1#opm1#dlu3#oln5" name="OKFlow5" to="mov1#opm1#okcu1" automaticCoupling="true"/>
       <KOLink id="mov1#opm1#dlu3#kln1" name="KOFlow1" to="mov1#opm1#kocu1" automaticCoupling="true"/>
     </DeleteUnit>
-    <OKCollectorUnit gr:x="480" gr:y="85" id="mov1#opm1#okcu1" name="OK Port1"/>
-    <KOCollectorUnit gr:x="480" gr:y="185" id="mov1#opm1#kocu1" name="KO Port1"/>
+    <OKCollectorUnit gr:x="595" gr:y="65" id="mov1#opm1#okcu1" name="OK Port1"/>
+    <KOCollectorUnit gr:x="595" gr:y="210" id="mov1#opm1#kocu1" name="KO Port1"/>
   </OperationUnits>
 </OperationModule>

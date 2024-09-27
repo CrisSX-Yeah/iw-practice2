@@ -27,19 +27,19 @@ create table "public"."user" (
 
 -- productos [ent1]
 create table "public"."productos" (
-   "oid"  int4  not null,
+   "id"  int4  not null,
    "nombreproducto"  varchar(255),
    "descripcionproducto"  text,
    "precioproducto"  numeric(19, 2),
-  primary key ("oid")
+  primary key ("id")
 );
 
 
 -- categorias [ent2]
 create table "public"."categorias" (
-   "oid"  int4  not null,
+   "id"  int4  not null,
    "nombrecategoria"  varchar(255),
-  primary key ("oid")
+  primary key ("id")
 );
 
 
@@ -75,6 +75,6 @@ alter table "public"."user_group"   add constraint fk_user_group_group foreign k
 
 -- productos_categorias [rel1]
 alter table "public"."productos"  add column  "categorias_oid"  int4;
-alter table "public"."productos"   add constraint fk_productos_categorias foreign key ("categorias_oid") references "public"."categorias" ("oid");
+alter table "public"."productos"   add constraint fk_productos_categorias foreign key ("categorias_oid") references "public"."categorias" ("id");
 
 
