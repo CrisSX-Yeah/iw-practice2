@@ -43,7 +43,7 @@
   </ContentUnits>
   <layout:Grid containerType="grid">
     <layout:Row>
-      <layout:Cell colspan="12">
+      <layout:Cell colspan="6">
         <layout:Unit unitId="sv1#page10#pwu13">
           <layout:Attribute attribute="ent1#att1"/>
           <layout:Attribute attribute="ent1#att4"/>
@@ -59,36 +59,7 @@
       <layout:Cell/>
       <layout:Cell/>
       <layout:Cell/>
-      <layout:Cell/>
-      <layout:Cell/>
-      <layout:Cell/>
-      <layout:Cell/>
-      <layout:Cell/>
-      <layout:Cell/>
-    </layout:Row>
-    <layout:Row>
-      <layout:Cell colspan="12">
-        <layout:Unit unitId="sv1#page10#dau4">
-          <layout:Attribute attribute="ent1#att1"/>
-          <layout:Attribute attribute="ent1#att4"/>
-          <layout:Attribute attribute="ent1#att5"/>
-          <layout:Attribute attribute="ent1#att6"/>
-        </layout:Unit>
-      </layout:Cell>
-      <layout:Cell/>
-      <layout:Cell/>
-      <layout:Cell/>
-      <layout:Cell/>
-      <layout:Cell/>
-      <layout:Cell/>
-      <layout:Cell/>
-      <layout:Cell/>
-      <layout:Cell/>
-      <layout:Cell/>
-      <layout:Cell/>
-    </layout:Row>
-    <layout:Row>
-      <layout:Cell colspan="12">
+      <layout:Cell colspan="6">
         <layout:Unit unitId="sv1#page10#enu6">
           <layout:Field field="sv1#page10#enu6#fld21"/>
           <layout:Field field="sv1#page10#enu6#fld22"/>
@@ -102,21 +73,22 @@
       <layout:Cell/>
       <layout:Cell/>
       <layout:Cell/>
-      <layout:Cell/>
-      <layout:Cell/>
-      <layout:Cell/>
-      <layout:Cell/>
-      <layout:Cell/>
-      <layout:Cell/>
     </layout:Row>
     <layout:Row>
-      <layout:Cell colspan="12"/>
+      <layout:Cell colspan="6">
+        <layout:Unit unitId="sv1#page10#dau4">
+          <layout:Attribute attribute="ent1#att1"/>
+          <layout:Attribute attribute="ent1#att4"/>
+          <layout:Attribute attribute="ent1#att5"/>
+          <layout:Attribute attribute="ent1#att6"/>
+        </layout:Unit>
+      </layout:Cell>
       <layout:Cell/>
       <layout:Cell/>
       <layout:Cell/>
       <layout:Cell/>
       <layout:Cell/>
-      <layout:Cell/>
+      <layout:Cell colspan="6"/>
       <layout:Cell/>
       <layout:Cell/>
       <layout:Cell/>
