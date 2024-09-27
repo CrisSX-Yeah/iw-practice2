@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="1400" gr:y="495" id="sv1#page14" name="Jerarquico de Categorias" landmark="true">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="1400" gr:y="495" id="sv1#page14" name="Jer&#225;rquico de Categor&#237;as" landmark="true">
   <ContentUnits>
     <HierarchicalIndexUnit gr:x="0" gr:y="80" id="sv1#page14#hinu4" name="Jer&#225;rquico de categor&#237;as" sortable="false" entity="ent2" displayAttributes="ent2#att2 ent2#att3" linkOrder="sv1#page14#hinu4#ln34 sv1#page14#hinu4#ln35">
       <SortAttribute attribute="ent2#att2" order="ascending"/>
@@ -14,7 +14,7 @@
         <KeyCondition id="sv1#page14#dau9#su16#kcond20" name="KeyCondition20" predicate="in" implied="false"/>
       </Selector>
     </DataUnit>
-    <DataUnit gr:x="265" gr:y="140" id="sv1#page14#dau10" name="Producto" entity="ent1" displayAttributes="ent1#att1 ent1#att4 ent1#att5">
+    <DataUnit gr:x="265" gr:y="140" id="sv1#page14#dau10" name="Producto" entity="ent1" displayAttributes="ent1#att1 ent1#att4 ent1#att5 ent1#att6">
       <Selector id="sv1#page14#dau10#su17" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv1#page14#dau10#su17#kcond21" name="KeyCondition21" predicate="in" implied="false"/>
       </Selector>
@@ -60,6 +60,7 @@
           <layout:Attribute attribute="ent1#att1"/>
           <layout:Attribute attribute="ent1#att4"/>
           <layout:Attribute attribute="ent1#att5"/>
+          <layout:Attribute attribute="ent1#att6"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>
