@@ -1,0 +1,26 @@
+<SiteView xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv1" name="publico" landmarks="sv1#page1 sv1#page2 sv1#page3" homePage="sv1#page1">
+  <OperationUnits>
+    <DeleteUnit gr:x="65" gr:y="305" id="sv1#dlu1" name="CRUD Borrar Categor&#237;a" gr:showAllParts="true" entity="ent2">
+      <Selector id="sv1#dlu1#su1" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv1#dlu1#su1#kcond1" name="KeyCondition1" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="sv1#dlu1#oln1" name="OKFlow1" to="sv1#page1" automaticCoupling="true"/>
+      <KOLink id="sv1#dlu1#kln2" name="KOFlow2" to="sv1#page1" automaticCoupling="true" gr:bendpoints="106,50,-169,120"/>
+    </DeleteUnit>
+    <CreateUnit gr:x="40" gr:y="145" id="sv1#cru1" name="CRUD Crear Categor&#237;a" gr:showAllParts="true" entity="ent2">
+      <KOLink id="sv1#cru1#kln3" name="KOFlow3" to="sv1#page1" automaticCoupling="true"/>
+      <OKLink id="sv1#cru1#oln2" name="OKFlow2" to="sv1#page1#pwu1" automaticCoupling="true" gr:bendpoints="168,77,-72,-108"/>
+    </CreateUnit>
+    <CreateUnit gr:x="1190" gr:y="145" id="sv1#cru2" name="CRUD Cread producto" entity="ent1">
+      <OKLink id="sv1#cru2#oln3" name="OKFlow3" to="sv1#page2#pwu2" automaticCoupling="true" gr:bendpoints="-124,-32,296,-127;-194,-129,221,-154;-296,-99,119,-124"/>
+      <KOLink id="sv1#cru2#kln4" name="KOFlow4" to="sv1#page2" automaticCoupling="true" gr:bendpoints="-217,85,203,-10"/>
+    </CreateUnit>
+    <DeleteUnit gr:x="535" gr:y="140" id="sv1#dlu2" name="CRUD Borrar Producto" entity="ent1">
+      <Selector id="sv1#dlu2#su3" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv1#dlu2#su3#kcond2" name="KeyCondition2" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="sv1#dlu2#oln4" name="OKFlow4" to="sv1#page2" automaticCoupling="true" gr:bendpoints="96,-60,-174,-130"/>
+      <KOLink id="sv1#dlu2#kln5" name="KOFlow5" to="sv1#page2" automaticCoupling="true" gr:bendpoints="98,40,-172,-30"/>
+    </DeleteUnit>
+  </OperationUnits>
+</SiteView>
